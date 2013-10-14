@@ -1,0 +1,720 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>Web Shop</title>
+
+<!-- Main style -->
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+<!-- Fancybox style -->
+<link rel="stylesheet" href="fancybox/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+
+<!-- Product slider style -->
+<link rel="stylesheet" href="css/product-slider.css" type="text/css" />
+
+<!-- Style for the superfish navigation menu -->
+<link rel="stylesheet" href="superfish/superfish.css" type="text/css" media="screen" />
+
+<!-- Promo slider style -->
+<link rel="stylesheet" href="css/megamenu.css" type="text/css" /> 
+
+<!-- Style for Megamenu -->
+<link rel="stylesheet" type="text/css" href="css/scrollable-navig.css">
+
+<!-- Google font -->
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css' />
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css' />
+
+<!-- JS for jQuery -->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+
+<!-- JS for jQuery Product slider -->
+<script type="text/javascript" src="js/jquery.tools.min.js"></script>
+
+<!-- JS for jQuery Border effect -->
+<script type="text/javascript" src="js/jquery.insetBorderEffect.js"></script>
+
+<!-- JS for jQuery Fancy Box -->
+<script type="text/javascript" src="fancybox/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+<!-- JS for superfish navigation menu -->
+<script type="text/javascript" src="superfish/hoverIntent.js"></script> 
+<script type="text/javascript" src="superfish/superfish.js"></script> 
+
+</head>
+<body>
+	
+<div id="container">
+
+	<div id="header-top">
+		<p>
+			<strong>FREE</strong> delivery on orders over $100. Add promo code <span class="promocode">FREEDEV</span> at checkout. Expires 12 March
+		</p>
+	</div>
+	
+	<div class="header-main">
+		<div class="logo">
+			<a href="index.html" name="top"><img src="images/logo.png" alt="logo" border="0"/></a>
+		</div>
+		
+		<div class="login-block">
+			<span class="account"><a href="#" class="account">Sign In</a></span> <span class="cart"><a href="cart.html" class="cart">My Cart (0)</a></span>
+		</div>
+	</div>
+	
+	<div id="navigation">
+		
+		<div class="search-container">
+			<div class="search-inner">	
+				<input type="text" value="I am looking for..." onfocus="if(this.value=='I am looking for...'){this.value=''};" onblur="if(this.value==''){this.value='I am looking for...'};" class="search-field"/>
+				<input type="submit" id="s_submit" value="" class="search-btn"/>
+			</div>
+		</div>
+		<div class="navigation-inner">
+			<div class="flare"></div>
+			<div class="home-icon">
+				<a href="index.html"><img src="images/home_icon.png" border="0"/></a>
+			</div>
+			<!-- Navigation start -->
+			<ul class="sf-menu">
+				<li class="nav-item"><a href="#">Pages</a>
+					<ul>
+						<li class="sfish-navgiation-item">
+							<a href="price_compare.html">Price Compare Table</a>
+						</li>
+						<li class="sfish-navgiation-item">
+							<a href="faq.html">FAQ</a>
+						</li>
+						<li class="sfish-navgiation-item">
+							<a href="cart.html">Shopping Cart</a>
+						</li>
+						<li class="sfish-navgiation-item">
+							<a href="right_sidebar.html">Right Sidebar</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item"><a href="grid.html">Online Store</a>
+					<ul>
+						<li class="sfish-navgiation-item">
+							<a href="grid.html">Product Listing as Grid</a>
+						</li>
+						<li class="sfish-navgiation-item">
+							<a href="list.html">Product Listing as List</a>
+						</li>
+						<li class="sfish-navgiation-item last">
+							<a href="details.html">Product Details</a>
+						</li>
+					</ul>	
+				</li>
+				<li class="nav-item"><a href="blog.html">Blog</a></li>
+				<li class="nav-item"><a href="#">Shortcodes</a>
+					<ul>
+						<li class="sfish-navgiation-item">
+							<a href="shortcodes_buttons.html">Buttons and Links</a>
+						</li>
+						<li class="sfish-navgiation-item">
+							<a href="shortcodes_columns.html">Columns</a>
+						</li>
+						<li class="sfish-navgiation-item last">
+							<a href="shortcodes_tabs.html">Tabs and Accordions</a>
+						</li>
+					</ul>	
+				</li>
+				<li class="nav-item"><a href="#">Portfolio</a>
+					<ul>
+						<li class="sfish-navgiation-item">
+							<a href="portfolio_2columns.html">Two Columns Layout</a>
+						</li>
+						<li class="sfish-navgiation-item">
+							<a href="portfolio_3columns.html">Three Columns Layout</a>
+						</li>
+						<li class="sfish-navgiation-item last">
+							<a href="portfolio_4columns.html">Four Columns Layout</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-item"><a href="contacts.html">Contacts</a></li>
+			</ul>
+			<!-- Navigation end -->
+			
+			<!-- Megamenu Begin -->
+			<ul id="ldd_menu" class="ldd_menu">
+				<li>
+					<span>Mega Menu</span><!-- Increases to 510px in width-->
+					<div class="ldd_submenu">
+						<div class="mega-menu-text float-left">
+							<h4>What is Mega Menu?</h4>
+							Mega menu is a next step of the js based dropdown. It's similar to a normal menu in terms of general behaviour, but enriched with more options, multiple links, complex navigation, form elements like login, search and much more.
+						</div>
+						<div class="mega-menu-text float-right">
+							<h4>Example</h4>
+							<p class="newsletter">
+								<input type="text" class="megamenu-field" onblur="if(this.value==''){this.value='Enter your e-mail...'};" onfocus="if(this.value=='Enter your e-mail...'){this.value=''};" value="Enter your e-mail...">
+							</p>
+							<p class="newsletter">
+								<input type="text" class="megamenu-field" onblur="if(this.value==''){this.value='Enter your name...'};" onfocus="if(this.value=='Enter your name...'){this.value=''};" value="Enter your name...">
+							</p>
+						</div><br class="clear"/>
+						<div class="mega-menu-text float-left">
+							<h4>Why do I need it?</h4>
+							Because you can create much more interesting and complex navigation systems, grouping links, improve the UI, improve the user's workflow while filling forms, signing in etc.
+						</div>
+						<div class="mega-menu-text float-right">
+							<h4>Another example</h4>
+							<img src="images/slide_small1.jpg">
+							<img src="images/slide_small3.jpg">
+							<img src="images/slide_small2.jpg">
+						</div>
+					</div>
+				</li>
+			</ul>
+			<!-- Megamenu End -->
+			
+		</div>
+	</div>
+	
+	<div id="content">
+		<div class="sales-label">
+		</div>
+		
+		<!-- Promo Begin -->
+		<div class="promo-inner" id="promo">
+		
+			<!-- main navigator -->
+			
+			<ul id="main_navi">
+			
+				<li class="first">
+					<img src="images/slide_small1.jpg">
+					<span class="title">What Is My Color</span>
+					Lorem ipsum dolor sit amet
+				</li>
+				<li class="">
+					<img src="images/slide_small2.jpg">
+					<span class="title">Full Set Of Features</span>
+					Nulla sit amet nunc non nibh faucibus
+				</li>
+				<li class="active">
+					<img src="images/slide_small3.jpg">
+					<span class="title">Dreams In Purple</span>
+					Phasellus elefend, enim non euismod lacinia
+				</li>
+				<li class="last">
+					<img src="images/slide_small4.jpg">
+					<span class="title">Red For Passion</span>
+					Class aptent taciti sociosqu it litora
+				</li>
+			</ul>
+			
+			<!-- root element for the main scrollable -->
+			<div id="main">
+			
+				<!-- root element for pages -->
+				<div style="top: -940px;" id="pages">
+			
+					<!-- page #1 -->
+					<div class="page">
+			
+						<!-- sub navigator #1 -->
+						<div class="navi"><a class="nivo-control active"></a><a></a><a></a></div>
+			
+						<!-- inner scrollable #1 -->
+						<div class="scrollable">
+			
+							<!-- root element for scrollable items -->
+							<div class="items">
+			
+								<!-- items  -->
+								<div class="item">
+									<img src="images/promo1.jpg">
+								</div>
+								<div class="item">
+									<img src="images/promo4.jpg">
+								</div>
+								<div class="item">
+									<img src="images/promo5.jpg">
+								</div>
+			
+								</div>
+			
+						</div>
+			
+					</div>
+			
+					<!-- page #2 -->
+					<div class="page">
+			
+						<div class="navi"><a class="active"></a><a></a><a></a></div>
+			
+						<!-- inner scrollable #2 -->
+						<div class="scrollable">
+			
+							<!-- root element for scrollable items -->
+							<div class="items">
+			
+								<!-- items on the second page -->
+							<div class="item">
+									<img src="images/promo2.jpg">
+								</div>
+								<div class="item">
+									<img src="images/promo4.jpg">
+								</div>
+								<div class="item">
+									<img src="images/promo5.jpg">
+								</div>
+			
+							</div>
+			
+						</div>
+			
+					</div>
+					
+					<!-- page #3 -->
+					<div class="page">
+			
+						<div class="navi"><a class="active"></a><a></a><a></a></div>
+			
+						<!-- inner scrollable #2 -->
+						<div class="scrollable">
+			
+							<!-- root element for scrollable items -->
+							<div class="items">
+			
+								<!-- items on the second page -->
+								<div class="item">
+									<img src="images/promo4.jpg">
+								</div>
+								<div class="item">
+									<img src="images/promo2.jpg">
+								</div>
+								<div class="item">
+									<img src="images/promo5.jpg">
+								</div>
+			
+							</div>
+			
+						</div>
+			
+					</div>
+			
+					<!-- page #4 -->
+					<div class="page">
+			
+						<div class="navi"><a class="active"></a><a></a><a></a></div>
+			
+						<!-- inner scrollable #3 -->
+						<div class="scrollable">
+			
+							<!-- root element for scrollable items -->
+							<div class="items">
+			
+								<!-- items on the first page -->
+							<div class="item">
+									<img src="images/promo3.jpg">
+								</div>
+								<div class="item">
+									<img src="images/promo4.jpg">
+								</div>
+								<div class="item">
+									<img src="images/promo5.jpg">
+								</div>
+			
+							</div>
+			
+						</div>
+			
+					</div>
+					<!-- End page 4 -->
+					
+				</div>
+			
+			</div>
+
+		</div>
+		<!-- End Promo -->
+
+		<div class="shadow"></div>
+		<!-- Promo End -->
+		
+		<!-- Message Begin -->
+		
+		<div class="message">
+			Welcome to this great and sophisticated e-shop. We have prepared an enormous set of features for you!
+		</div>
+		
+		<!-- Message End -->
+		
+		<!-- Bestsellers Begin -->
+		<div class="content-top">
+		</div>
+		
+		<div class="content-inner home">
+			
+			<div id="slider-container">
+				
+			<div class="slider-nav">
+				<a class="prev2"></a>
+				<a class="next2"></a>
+			</div>
+
+				<div class="slider">   
+					
+				   <!-- Listing of the elements of the slider -->
+				   <div class="items">
+				   
+					  <!-- 1-4 -->
+					  <div class="group-items">
+						 <div class="single-item">
+							<span class="title"><a href="details.html">Great New Perfume for Her</a></span>
+							<span class="price">$149.90</span>
+							<img src="images/product1.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item">
+							<span class="title"><a href="details.html">Aroma Accattivante</a></span>
+							<span class="price">$29</span>
+							<img src="images/product2.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item">
+							<span class="title"><a href="details.html">Delight in Orange and Yellow</a></span>
+							<span class="price">$23</span>
+							<img src="images/product3.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item">
+							<span class="title"><a href="details.html">Kiss in the Rain</a></span>
+							<span class="price">$129.90</span>
+							<img src="images/product5.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+					  </div>
+					  
+					  <!-- 4-8 -->
+					  <div class="group-items">
+						 <div class="single-item">
+							<span class="title"><a href="details.html">Aroma Dolce</a></span>
+							<span class="price">$149.90</span>
+							<img src="images/product4.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item">
+							<span class="title"><a href="details.html">Wind of Spring</a></span>
+							<span class="price">$29</span>
+							<img src="images/product2.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item">
+							<span class="title"><a href="details.html">Great New Perfume for Her</a></span>
+							<span class="price">$23</span>
+							<img src="images/product6.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+						
+						<div class="single-item">
+							<span class="title"><a href="details.html">Delight in Orange and Yellow</a></span>
+							<span class="price">$129.90</span>
+							<img src="images/product3.png" alt="Item"/>
+							<a href="#" class="general-button float-left"><span class="button">Add to cart</span></a>
+							<span class="list-link">
+								<a href="details.html" class="regular">View more...</a>
+							</span>
+							<br class="clear"/>
+						</div>
+					  </div>
+					  
+				   </div>
+				   
+				   <!-- End -->
+				   
+				</div>
+
+				<br class="clear"/>
+			</div>
+
+		</div>
+		<div class="shadow"></div>
+		<!-- Bestsellers End -->
+		
+		<div class="content-top blog-home"></div>
+		<div class="content-inner home">
+			
+			<!-- Gallery Begin -->
+			<div class="one-half float-left">
+				<h3>Browse Our Gallery</h3>
+				
+				<a href="images/big01.jpg" rel="group4" class="grouped-elements" title="Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci.">
+					<img border="0" alt="" src="images/01.jpg" class="portfolio-image">
+					<span class="imagehover"></span>
+				</a>
+				<a href="images/big02.jpg" rel="group4" class="grouped-elements" title="Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci.">
+					<img border="0" alt="" src="images/02.jpg" class="portfolio-image">
+					<span class="imagehover"></span>
+				</a>
+				<a href="images/big03.jpg" rel="group4" class="grouped-elements" title="Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci.">
+					<img border="0" alt="" src="images/03.jpg" class="portfolio-image">
+					<span class="imagehover"></span>
+				</a>
+				<a href="images/big04.jpg" rel="group4" class="grouped-elements" title="Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci.">
+					<img border="0" alt="" src="images/04.jpg" class="portfolio-image">
+					<span class="imagehover"></span>
+				</a>
+				<a href="images/big05.jpg" rel="group4" class="grouped-elements" title="Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci.">
+					<img border="0" alt="" src="images/05.jpg" class="portfolio-image">
+					<span class="imagehover"></span>
+				</a>
+				<a href="images/big06.jpg" rel="group4" class="grouped-elements" title="Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci.">
+					<img border="0" alt="" src="images/06.jpg" class="portfolio-image">
+					<span class="imagehover"></span>
+				</a>
+				<a href="images/big03.jpg" rel="group4" class="grouped-elements" title="Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci.">
+					<img border="0" alt="" src="images/03.jpg" class="portfolio-image">
+					<span class="imagehover"></span>
+				</a>
+				<a href="images/big01.jpg" rel="group4" class="grouped-elements" title="Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci.">
+					<img border="0" alt="" src="images/01.jpg" class="portfolio-image">
+					<span class="imagehover"></span>
+				</a>
+				<a href="images/big04.jpg" rel="group4" class="grouped-elements" title="Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci.">
+					<img border="0" alt="" src="images/04.jpg" class="portfolio-image">
+					<span class="imagehover"></span>
+				</a>
+			</div>
+			<!-- Gallery End -->
+			
+			<!-- Recent Posts Begin -->
+			<div class="one-half float-right">
+				<h3>Latest News or Blog Posts</h3>
+				
+				<div class="blog-post-home-title">
+					<div class="blog-home-date float-left">
+						<div class="date-number">23<br/>Feb</div>
+					</div>
+					<div class="blog-post-home-title-inner">
+						<a href="blog_single.html" class="title">Lorem ipsum dolor sit amet, consectetur elit. Nulla sit amet nunc non nibh faucibus dictum.</a>
+					</div>
+				</div>
+				
+				<p class="post-content">
+				Lorem ipsum dolor sit amet, consecteur adipsing elit. Phasellus elefend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi risus non orci. Nullam eu sapien ipsum, non adipiscing lacus. Suspendisse tempus purus et diam consequat volutpat. <a href="blog_single.html" class="regular">View more...</a>
+				</p>
+				
+				<div class="blog-post-home-title">
+					<div class="blog-home-date float-left">
+						<div class="date-number">20<br/>Feb</div>
+					</div>
+					<div class="blog-post-home-title-inner">
+						<a href="blog_single.html" class="title">Integer mattis accumsan dui vel sodales. In id ante lobortis nisi pretium pretium.</a>
+					</div>
+				</div>
+				
+				<p class="post-content-last">
+				Nunc porta turpis vitae tellus pulvinar dapibus. Morbi ut leo sapien, vel vulte orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. <a href="blog_single.html" class="regular">View more...</a>
+				</p>
+			</div>
+			<br class="clear"/>
+		</div>
+		<!-- Recent Posts End -->
+		
+		<div class="shadow"></div>
+		
+		<!-- Bullet List Begin -->
+		<div class="bullet-list float-left">
+			<h4>Providing High Quality Products</h4>
+			<p>Nunc porta turpis vitae tellus pulvinar dapibus. Morbi ut leo sapien, vel vulte orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			<ul class="bullet-list">
+				<li class="first">Suspendisse potenti. Fusce sed nisi enim, et tincidunt nunc</li>
+				<li>Vestibulum sed sapien quam, et iaculis ipsum</li>
+				<li>Lorem ipsum dolor sit amet, elit.</li>
+				<li>Phasellus eleifend, enim non esmod lacinia, urna odio convallis urna</li>
+			</ul>
+		</div>
+		<!-- Bullet List End -->
+		
+		<!-- Bullet List Begin -->
+		<div class="bullet-list float-right">
+			<h4>Many Great Features</h4>
+			<p class="icon-list-1">Lorem ipsum dolor amet, consecteur adipsing elit. Phasellus efend, enim non euismod lacinia, urna odio convallis urna, eu comodo mi non orci. Nullam eu sapien ipsum, non adipiscing lacus.</p>
+			<p class="icon-list-2">Nunc porta turpis vitae tellus pulvinar dapibus. Morbi ut leo sapien, vel vulte orci. Class sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse potenti. </p>
+			<p class="icon-list-3">Sed aliquet urna eu diam malesuada egestas nisl faucibus. Vivamus dui libero, pharetra eget vehicula vel, laoreet a arcu. Sed ac mauris massa. Praesent rutrum condimentum dolor.</p>
+		</div>
+		<!-- Bullet List End -->
+		
+		<br class="clear"/>
+
+	</div>
+	
+	<div id="footer">
+		<div class="footer-main">
+			
+			<div class="back-to-top"><a href="#top"><img src="images/top.png" alt="Back to top" border="0"/></a></div>
+			
+			<!-- Footer Column 1 Begin -->
+			<div class="left-column float-left">
+				<h5>Quick navigation</h5>
+				<ul class="footer-nav">
+					<li class="first"><a href="#">Customer support 24/7</a></li>
+					<li><a href="#">Shipping information</a></li>
+					<li><a href="#">Terms and conditions</a></li>
+					<li><a href="#">Legal notice</a></li>
+					<li><a href="#">Return policy</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+			</div>
+			<!-- Footer Column 1 End -->
+			
+			<!-- Footer Column 2 Begin -->
+			<div class="middle-column float-left">
+				<h5>Newsletter</h5>
+				<p>Sign up for our newsletter to receive on a regular basis updates, hot offers, site news etc.</p>
+				<p class="newsletter">
+					<input type="text" value="Enter your e-mail..." onfocus="if(this.value=='Enter your e-mail...'){this.value=''};" onblur="if(this.value==''){this.value='Enter your e-mail...'};" class="newsletter-field"/>
+					<input type="submit" id="go" value="GO" class="go-btn"/>
+				</p>
+			</div>
+			<!-- Footer Column 2 End -->
+			
+			<!-- Footer Column 3 Begin -->
+			<div class="left-column float-right">
+				<h5>Contact us</h5>
+				<p>Paris, France 12009<br/>
+					Boulevard de Sevastopol 377, Building A, Office 177
+				</p>
+				<p>
+					Phone: +33 123 456 and +33 456 789<br/>
+					Fax: +33 123 456<br/>
+					Email: <a href="#" class="footerlink">info@yoursite.com</a><br/>
+				</p>
+				<p>
+					<a href="#" class="social"><img src="images/facebook.png" alt="facebook" border="0"/></a>
+					<a href="#" class="social"><img src="images/vimeo.png" alt="vimeo" border="0"/></a>
+					<a href="#" class="social"><img src="images/youtube.png" alt="youtube" border="0"/></a>
+					<a href="#" class="social"><img src="images/twitter.png" alt="twitter" border="0"/></a>
+					<a href="#" class="social"><img src="images/google.png" alt="google" border="0"/></a>
+				</p>
+			</div>
+			<!-- Footer Column 3 End -->
+		</div>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	// Megamenu
+	$(function() {
+						
+		var $menu = $('#ldd_menu');
+		
+		$menu.children('li').each(function(){
+			var $this = $(this);
+			var $span = $this.children('span');
+			$span.data('width',$span.width());
+			
+			$this.bind('mouseenter',function(){
+				$menu.find('.ldd_submenu').stop(true,true).hide();
+				$span.stop().animate({'width':'auto'},150,function(){
+					$this.find('.ldd_submenu').slideDown(300);
+				});
+			}).bind('mouseleave',function(){
+				$this.find('.ldd_submenu').stop(true,true).hide();
+				$span.stop().animate({'width':$span.data('width')+'px'},300);
+			});
+		});
+	});
+	
+	$(document).ready(function() {
+		
+		// Border effects
+		$("#main_navi li img").insetBorder({
+			borderColor : '#EDE6E9',
+			inset: 4
+		});
+		
+		// Navigation menu
+		$('ul.sf-menu').superfish({ 
+			delay: 100
+		});  
+		
+		// Slider
+		$(".slider").scrollable({
+			next: '.next2', 
+			prev: '.prev2'
+		});
+	
+		// Fancybox
+		$("a.grouped-elements").fancybox({
+			'titlePosition'	: 'inside'
+		});
+
+		$("a[rel=group4]").fancybox({
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none',
+			'titlePosition' 	: 'over',
+			'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+				return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+			}
+		});
+		
+		// Mouseover effect for thumbnails
+		$("a.grouped-elements").hover(function() {
+			  $(this).find(".imagehover").toggleClass("mouseon");
+		});
+		
+	});
+
+	$(window).load(function() {
+		// Main Promo Scroller
+		$("#main").scrollable({
+
+			vertical: true,
+			keyboard: 'static',
+			onSeek: function(event, i) {
+				horizontal.eq(i).data("scrollable").focus();
+			}
+		
+		}).navigator("#main_navi");
+
+		var horizontal = $(".scrollable").scrollable({ circular: true }).navigator(".navi");
+		horizontal.eq(0).data("scrollable").focus();
+	});
+	
+</script>
+
+</body>
+</html>
